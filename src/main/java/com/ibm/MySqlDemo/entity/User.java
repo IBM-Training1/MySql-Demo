@@ -1,5 +1,7 @@
 package com.ibm.MySqlDemo.entity;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,6 +18,7 @@ public class User {
 	private String name;
 	@Email
 	private String email;
+	private Date dob;
 	
 	private long mobileNumber;
 	
@@ -44,6 +47,12 @@ public class User {
 	}
 	public void setMobileNumber(long mobileNumber) {
 		this.mobileNumber = mobileNumber;
+	}
+	public Date getDob() {
+		return dob;
+	}
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
 
 }
